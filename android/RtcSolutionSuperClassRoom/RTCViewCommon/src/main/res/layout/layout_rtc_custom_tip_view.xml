@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/alivc_common_width_group_300"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/alivc_common_radius_6"
+        app:cardElevation="0dp"
+        android:background="@color/alivc_common_bg_black">
+
+        <LinearLayout
+            android:background="@color/alivc_common_bg_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:minHeight="@dimen/alivc_common_margin_173"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alivc_common_padding_26"
+                android:textColor="@color/alivc_common_font_black"
+                android:textSize="@dimen/alivc_common_font_17" />
+
+            <TextView
+                android:id="@+id/tv_tips_title"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/alivc_common_margin_15"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/alivc_rtc_tips_title_color"
+                android:textSize="@dimen/alivc_common_font_15" />
+
+            <View
+                android:id="@+id/divider"
+                android:alpha="0.08"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/alivc_common_line_1px"
+                android:layout_marginTop="@dimen/alivc_common_margin_16"
+                android:background="@color/alivc_rtc_tips_dialog_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/alivc_common_size_group_50">
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/alivc_rtc_color_btn_enable_blue"
+                    android:textSize="@dimen/alivc_common_font_18" />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/alivc_rtc_color_btn_enable_blue"
+                    android:gravity="center"
+                    android:textColor="@color/alivc_common_white"
+                    android:textSize="@dimen/alivc_common_font_18" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

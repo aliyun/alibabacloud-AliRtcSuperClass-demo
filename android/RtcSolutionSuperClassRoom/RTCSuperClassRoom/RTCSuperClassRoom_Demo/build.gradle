@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        consumerProguardFiles 'proguard-rules.pro'
+        ndk {
+            abiFilters  "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
+//        multiDexEnabled true
+    }
+
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation externalAndroidAppCompatV7
+    implementation externalAndroidSupportV13
+    implementation externalAndroidSupportV4
+    implementation externalAndroidDesign
+    implementation externalGSON
+    implementation externalOKHTTP
+    implementation files('libs/AliRTCSdk.aar')
+    implementation 'com.aliyun.sdk.android:AliyunPlayer:4.7.4-full'
+    implementation 'com.alivc.conan:AlivcConan:0.9.5'
+    implementation project(path: ':RTCViewCommon')
+    implementation project(path: ':RTCSolutionCommon')
+}

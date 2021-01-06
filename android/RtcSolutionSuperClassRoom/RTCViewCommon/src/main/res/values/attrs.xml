@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RTCEditText">
+        <attr name="rtc_type">
+            <enum name="normal" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+        <attr name="rtc_hint" format="string" />
+        <attr name="rtc_textSize" format="dimension" />
+        <attr name="rtc_maxLines" format="integer" />
+        <attr name="rtc_maxLength" format="integer" />
+        <attr name="rtc_textColor" format="reference" />
+        <attr name="rtc_theme" format="reference" />
+        <attr name="rtc_width" format="reference" />
+        <attr name="rtc_height" format="reference" />
+        <attr name="rtc_cursor_color" format="reference"/>
+    </declare-styleable>
+</resources>

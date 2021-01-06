@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rtc_super_class_item_main"
+    android:layout_marginRight="@dimen/alirtc_commin_margin_10"
+    android:layout_marginTop="@dimen/alirtc_commin_margin_10"
+    android:layout_width="@dimen/alivc_common_size_icon_80"
+    android:layout_height="@dimen/alivc_common_size_icon_80"
+    android:background="@color/alivc_superclass_color_user_name_bg"
+    android:padding="@dimen/alivc_common_padding_1"
+    >
+
+    <FrameLayout
+        android:id="@+id/alivc_big_interactive_class_rl_student_preview_container"
+        android:background="@color/alivc_common_bg_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rtc_super_class_camera_close"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alivc_superclass_color_bg_gray"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/alivc_common_size_icon_20"
+            android:layout_height="@dimen/alivc_common_size_icon_20"
+            android:src="@drawable/alivc_superclass_byn_camera_close3x"
+            android:layout_marginTop="@dimen/alivc_common_margin_12"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:textSize="@dimen/alivc_common_font_10"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/alivc_superclass_color_text_white"
+            android:layout_centerInParent="true"
+            android:text="@string/alivc_superclass_string_camera_closed"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/alivc_common_margin_2"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="#37000000"
+        >
+
+        <TextView
+            android:id="@+id/alivc_big_interactive_class_tv_student_name"
+            android:textSize="@dimen/alivc_common_font_10"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/alivc_superclass_color_text_white"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/alivc_big_interactive_class_iv_student_mutelocalmic"
+            />
+
+        <ImageView
+            android:id="@+id/alivc_big_interactive_class_iv_student_mutelocalmic"
+            android:layout_height="@dimen/alivc_common_size_icon_12"
+            android:layout_width="@dimen/alivc_common_size_icon_12"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/alivc_superclass_byn_list_unmute_icon"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

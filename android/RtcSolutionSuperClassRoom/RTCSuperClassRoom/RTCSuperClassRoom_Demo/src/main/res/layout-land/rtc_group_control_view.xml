@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+        <LinearLayout
+            android:id="@+id/rtc_super_class_control_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_common_height_group_50"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/alivc_common_bg_black"
+            >
+                <ImageView
+                    android:id="@+id/rtc_super_class_control_switch_camera"
+                    android:layout_width="@dimen/alivc_common_size_icon_25"
+                    android:layout_height="@dimen/alivc_common_size_icon_25"
+                    android:layout_marginLeft="@dimen/alivc_common_margin_45"
+                    android:src="@drawable/alivc_superclass_byn_switch_camera_able"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+
+                        <TextView
+                            android:id="@+id/rtc_super_class_control_title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/alivc_superclass_color_text_white"
+                            android:textSize="@dimen/alivc_superclass_size_text_18"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/rtc_super_class_control_copy"
+                            android:layout_width="@dimen/alivc_common_size_icon_20"
+                            android:layout_height="@dimen/alivc_common_size_icon_20"
+                            android:layout_marginLeft="@dimen/alivc_common_margin_15"
+                            android:src="@drawable/alivc_superclass_byn_copy"
+                            />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rtc_super_class_control_leave"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/alivc_common_margin_40"
+                    android:textColor="@color/alivc_superclass_color_text_white"
+                    android:background="@drawable/alivc_superclass_choose_red_bg_selector"
+                    android:text="@string/alivc_superclass_string_leave"
+                    android:textSize="@dimen/alivc_superclass_size_text_14"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/rtc_super_class_control_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_common_height_group_50"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@color/alivc_common_bg_black"
+            >
+                <TextView
+                    android:id="@+id/rtc_super_class_control_mute"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/alivc_superclass_byn_mute_able3x"
+                    android:textColor="@color/alivc_superclass_color_text_white"
+                    android:text="@string/alivc_superclass_string_mute"
+                    android:gravity="center"
+                    android:textSize="@dimen/alivc_superclass_size_text_12"
+                    />
+
+                <TextView
+                    android:id="@+id/rtc_super_class_control_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/alivc_superclass_byn_camera_close3x"
+                    android:textColor="@color/alivc_superclass_color_text_white"
+                    android:text="@string/alivc_superclass_string_camera_open"
+                    android:gravity="center"
+                    android:textSize="@dimen/alivc_superclass_size_text_12"
+                    />
+
+                <TextView
+                    android:id="@+id/rtc_super_class_control_connect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/alivc_superclass_byn_connect_open3x"
+                    android:textColor="@color/alivc_superclass_color_text_white"
+                    android:text="@string/alivc_superclass_string_connect_teacher"
+                    android:gravity="center"
+                    android:textSize="@dimen/alivc_superclass_size_text_12"
+                    />
+
+                <TextView
+                    android:id="@+id/rtc_super_class_control_group"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/alivc_superclass_byn_group3x"
+                    android:textColor="@color/alivc_superclass_color_text_white"
+                    android:text="@string/alivc_superclass_string_connect_group_members"
+                    android:gravity="center"
+                    android:textSize="@dimen/alivc_superclass_size_text_12"
+                    />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/rtc_super_class_control_single_mute"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_height_group_80"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/alivc_common_margin_37"
+            android:layout_marginRight="@dimen/alivc_common_margin_28"
+            android:drawableTop="@drawable/alivc_superclass_byn_mute_icon"
+            android:textColor="@color/alivc_superclass_color_text_white"
+            android:text="@string/alivc_superclass_string_mute"
+            />
+
+
+        <ImageView
+            android:id="@+id/rtc_super_class_control_rotate"
+            android:layout_width="@dimen/alivc_common_size_icon_50"
+            android:layout_height="@dimen/alivc_common_size_icon_50"
+            android:src="@drawable/alivc_superclass_byn_rotate_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/alivc_common_margin_30"
+            android:layout_marginBottom="70dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/rtc_super_class_control_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/alivc_common_margin_30"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alivc_superclass_byn_class_not_start"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:textSize="@dimen/alivc_common_font_18"
+                    android:textColor="@color/alivc_common_font_white"
+                    android:text="课程尚未开始"
+                    />
+
+        </LinearLayout>
+
+
+</merge>

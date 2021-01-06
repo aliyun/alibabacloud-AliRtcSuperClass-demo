@@ -1,0 +1,12 @@
+
+@import url('//at.alicdn.com/t/font_1913455_fvhen5qne0p.css');
+@function h($n) {
+  @return (($n * 100vh) / 720);
+}
+@function w($n) {
+  @return (($n * 100vw) / 1024); 
+}
+/*基础颜色*/
+$color:#FFFFFF;;
+$borderColor:#C1C1C1;
+$backgroundColor:#013EBE;

@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+    buildToolsVersion externalBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+    }
+
+}
+
+dependencies {
+    implementation (externalGlide){
+        exclude group: "com.android.support"
+    }
+    implementation externalAndroidSupportV4
+    implementation externalAndroidAppCompatV7
+    implementation externalAndroidRecyclerView
+    implementation externalOKHTTP
+    implementation externalGSON
+
+}

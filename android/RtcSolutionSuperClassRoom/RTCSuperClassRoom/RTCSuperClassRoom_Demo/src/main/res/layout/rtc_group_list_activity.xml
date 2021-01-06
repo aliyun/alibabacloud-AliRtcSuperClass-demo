@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_superclass_height_btn_layout_50">
+        <ImageView
+            android:id="@+id/alivc_superclass_back"
+            android:layout_width="@dimen/alivc_common_size_icon_40"
+            android:paddingLeft="@dimen/alivc_common_padding_10"
+            android:paddingRight="@dimen/alivc_common_padding_10"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/alivc_superclass_color_text_gray"
+            android:textSize="@dimen/alivc_superclass_size_text_18"
+            android:text="@string/alivc_superclass_string_choose_group"
+            />
+
+        <TextView
+            android:id="@+id/alivc_superclass_done"
+            android:gravity="center"
+            android:enabled="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/alivc_common_margin_20"
+            android:textColor="@color/alivc_superclass_color_text_white"
+            android:background="@drawable/alivc_superclass_choose_bg_selector"
+            android:text="@string/alivc_superclass_string_done"
+            android:textSize="@dimen/alivc_superclass_size_text_14"
+            android:layout_width="58dp"
+            android:layout_height="35dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_superclass_line_1px"
+        android:background="@color/alivc_superclass_color_text_gray"
+        ></View>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rtc_super_class_group_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

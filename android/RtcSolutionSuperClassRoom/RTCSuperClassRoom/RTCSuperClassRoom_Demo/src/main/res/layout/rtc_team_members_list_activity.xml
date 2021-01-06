@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_superclass_bg_black"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_superclass_height_btn_layout_50">
+        <ImageView
+            android:id="@+id/alivc_superclass_team_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/alivc_common_padding_10"
+            android:paddingRight="@dimen/alivc_common_padding_10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/alivc_superclass_byn_icon_back"
+            />
+
+        <TextView
+            android:id="@+id/alivc_superclass_team_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/alivc_common_font_white"
+            android:textSize="@dimen/alivc_superclass_size_text_18"
+            android:text="@string/alivc_superclass_string_team_members"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_superclass_line_1px"
+        android:background="@color/alivc_superclass_color_bg_hint_timeout"
+        ></View>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rtc_super_class_team_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

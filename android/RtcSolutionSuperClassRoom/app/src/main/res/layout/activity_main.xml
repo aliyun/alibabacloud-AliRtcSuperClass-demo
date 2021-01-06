@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:scaleType="centerInside"
+        android:background="@drawable/bg_main_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="137dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/icon_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="11sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@id/logo"
+        android:textColor="@color/color_tv_subtitle"
+        android:text="@string/string_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="279dp"
+        android:id="@+id/rcy_model_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

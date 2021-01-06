@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alivc_rtc_color_text_white">#ffffffff</color>
+    <color name="alivc_rtc_tips_title_color">#888888</color>
+
+    <color name="alivc_rtc_color_btn_unenable_blue">#b6c6e9</color>
+    <color name="alivc_rtc_color_btn_enable_blue">#013EBE</color>
+
+    <color name="alivc_rtc_color_text_gray">#262626</color>
+    <color name="alivc_rtc_cursor_blue">#013EBE</color>
+    <color name="alivc_rtc_bottom_line_color">#979797</color>
+    <color name="alivc_rtc_tips_dialog_line_color">#191F25</color>
+</resources>

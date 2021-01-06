@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import "./base.scss";
+
+@mixin button-size($width,$height) {
+  @if($width){
+    width:$width;
+  }
+  height:$height;
+  // line-height:$height;
+  &.is-round{
+    border-radius: $height/2;
+  }
+}
+@mixin button-type($color,$backgroundColor) {
+  background-color:$backgroundColor;
+  color:$color;
+  &.is-plain{
+    background-color:white;
+    color:$backgroundColor;
+    border: 1px solid $backgroundColor;
+  }
+}
+.hui-button{
+  display: inline-block;
+  line-height: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  // border: 1px solid #dcdfe6;
+  border: 0px;
+  color: white;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: h(12) w(20);
+  font-size: h(23);
+  @include button-size("",h(48));
+  @include button-type(#181818,#E5E5E5);
+   &.is-disabled{
+    opacity: 0.3;
+   }
+}
+.hui-button--primary{
+   @include button-type(white,#013EBE);
+}
+.hui-button--success{
+  @include button-type(white,#013EBE);
+}
+.hui-button--warning{
+  @include button-type(white,#013EBE);
+}
+.hui-button--danger{
+  @include button-type(white,#013EBE);
+}
+
+.hui-button--medium{
+  @include button-size("",h(32));
+  font-size: h(14);
+  padding: h(0) w(20);
+}
+
+.hui-button--small{
+  @include button-size("",h(36));
+  font-size: h(14);
+  padding: h(0) w(20);
+}
+
+.hui-button--mini{
+  @include button-size("",h(32));
+  font-size: h(14);
+  padding: h(0) w(20);
+}
+

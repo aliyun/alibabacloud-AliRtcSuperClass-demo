@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+    buildToolsVersion externalBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+    }
+
+}
+
+dependencies {
+    implementation project(path: ':RTCSolutionCommon')
+    implementation externalAndroidSupportV4
+    implementation externalAndroidAppCompatV7
+    implementation externalAndroidDesign
+    implementation externalAndroidCardView
+}

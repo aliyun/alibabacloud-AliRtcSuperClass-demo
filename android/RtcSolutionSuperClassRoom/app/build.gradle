@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+        android {
+            compileSdkVersion 29
+            buildToolsVersion '29.0.0'
+        
+            defaultConfig {
+                applicationId "com.aliyun.experience.RTCSolution"
+                minSdkVersion 16
+                targetSdkVersion 29
+                versionCode 100
+                versionName "1.0.0"
+        
+                testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+                ndk {
+                   abiFilters "armeabi-v7a","arm64-v8a"
+                }
+            }
+        
+            signingConfigs {
+                debug {
+                }
+        
+                release {
+                }
+            }
+
+            buildTypes {
+                release {
+                    debuggable true
+                    multiDexEnabled true
+                    minifyEnabled true
+                    signingConfig signingConfigs.release
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                }
+        
+                debug {
+                    debuggable true
+                    multiDexEnabled true
+                    minifyEnabled false
+                    signingConfig signingConfigs.debug
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                }
+            }
+            
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir "src/main/libs"
+            }
+        
+            lintOptions {
+                abortOnError false
+            }
+        
+        }
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project (':RTCSolutionCommon')
+    implementation project (':RTCSuperClassRoom:RTCSuperClassRoom_Demo')
+    implementation externalAndroidAppCompatV7
+    implementation externalAndroidSupportV4
+    implementation externalAndroidRecyclerView
+    implementation externalGSON
+    implementation externalOKHTTP
+    implementation externalAndroidMultiDex
+    implementation  'com.umeng.umsdk:analytics:8.0.0'
+    implementation  'com.umeng.umsdk:common:2.0.0'
+    
+}

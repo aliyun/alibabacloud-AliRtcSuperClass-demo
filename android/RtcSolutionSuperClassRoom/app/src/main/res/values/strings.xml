@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">音视频通信</string>
+    <string name="string_voice_call_solo_name">一对一语聊</string>
+    <string name="string_interactive_class_name">互动直播课</string>
+    <string name="string_audio_live_room_name">语音聊天室</string>
+    <string name="string_video_live_room_name">视频直播连麦</string>
+    <string name="string_super_class_name">超级小班课</string>
+    <string name="string_sub_title">阿里云音视频通信RTC提供基础通信服务</string>
+</resources>

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "./base.scss";
+.hui-select{
+  position: relative;
+  .hui-select-input{
+    border-bottom: h(1) solid $borderColor;
+    width: 100%;
+    height: h(38);
+    line-height: h(38);
+    outline: none;
+    cursor: pointer;
+    text-indent: w(0);
+    font-size: h(16);
+    overflow: hidden;
+  }
+  .icon-xiangxiajiantou{
+    position: absolute;
+    right: w(0);
+    top:h(8);
+    font-size: h(24);
+  }
+   .hui-select-ul{
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      right: 0;
+      top:h(45);
+      background-color: white;
+      box-shadow: 0 h(2) h(12) 0 rgba(0,0,0,.1);
+      border-radius: h(4);
+      max-height:h(120);
+      overflow-y: auto;
+      overflow-x: hidden;
+      .hui-option{
+         width: 100%;
+         height: h(40);
+         line-height: h(40);
+         text-indent: w(10);
+         cursor: pointer;
+      }
+      .hui-option:hover{
+        background-color: whitesmoke;
+        >span{
+          color: black;
+          font-weight: bold;
+        }
+      }
+   }
+}

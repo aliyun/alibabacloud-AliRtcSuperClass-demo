@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rtc_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_common_bg_black"
+    tools:ignore="MissingDefaultResource">
+
+    <FrameLayout
+        android:id="@+id/rtc_super_class_view_top"
+        android:layout_width="match_parent"
+        android:background="@color/alivc_common_bg_transparent"
+        android:layout_height="@dimen/alivc_superclass_height_btn_layout_50"
+        >
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/rtc_super_class_view_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/alivc_common_bg_transparent"
+        android:layout_height="@dimen/alivc_superclass_height_btn_layout_50"
+        >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rtc_super_class_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <RelativeLayout
+        android:background="@color/alivc_common_bg_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rtc_super_class_view_top"
+        android:layout_above="@id/rtc_super_class_view_bottom"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/super_class_rcy_student_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alivc_common_margin_20"
+            android:layout_marginTop="@dimen/alirtc_commin_margin_10"
+            android:layout_marginRight="@dimen/alivc_common_margin_20" />
+
+        <TextView
+            android:id="@+id/super_class_speaking_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/super_class_rcy_student_list"
+            android:layout_marginTop="@dimen/alivc_common_margin_15"
+            android:textSize="@dimen/alivc_superclass_size_text_14"
+            android:textColor="@color/alivc_common_font_white"
+            />
+
+        <FrameLayout
+            android:id="@+id/rtc_super_class_preview"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/alivc_common_margin_18"
+            >
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.aliyun.rtc.superclassroom.view.ControlView
+        android:id="@+id/rtc_super_class_view_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.aliyun.rtc.superclassroom.view.ControlView>
+
+
+</RelativeLayout>

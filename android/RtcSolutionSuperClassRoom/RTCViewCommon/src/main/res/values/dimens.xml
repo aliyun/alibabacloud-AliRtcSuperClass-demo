@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alivc_rtc_size_text_18">18sp</dimen>
+
+    <dimen name="alivc_rtc_radius_selector_24">24dp</dimen>
+    <dimen name="alivc_rtc_width_loading_80">80dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alivc_rtc_net_work_error_tips1">网络连接失败</string>
+    <string name="alivc_rtc_net_work_error_tips2">请检查你的网络设置或重试</string>
+    <string name="alivc_rtc_net_work_error_button">重新连接</string>
+</resources>

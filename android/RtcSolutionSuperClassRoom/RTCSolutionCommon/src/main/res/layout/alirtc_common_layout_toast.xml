@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/alirtc_common_margin_26"
+    android:paddingRight="@dimen/alirtc_common_margin_26"
+    android:paddingBottom="@dimen/alirtc_common_margin_15"
+    android:gravity="center"
+    android:paddingTop="@dimen/alirtc_common_margin_15"
+    android:id="@+id/alivc_voicecall_tv_toast"
+    android:background="@drawable/alirtc_common_bg_toast_shape"
+    android:layout_width="match_parent"
+    android:textSize="@dimen/alirtc_common_size_text_14"
+    android:textColor="@color/alivc_common_white"
+    android:layout_height="match_parent"/>

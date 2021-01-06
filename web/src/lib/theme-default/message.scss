@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import "./base.scss";
+
+@mixin message-type($color,$backgroundColor) {
+  color:$color;
+  background-color:$backgroundColor;
+}
+
+.hui-message-fade{
+  position: fixed;
+  z-index: 100;
+  top:50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: h(14);
+  @include message-type(#909399,#edf2fc);
+  min-width: h(380);
+  padding: h(15);
+  border-radius: h(5);
+  .iconfont{
+    margin-left: 5px;
+    font-size: h(12);
+  }
+}
+.hui-message--info{
+  @include message-type(#909399,#edf2fc);
+}
+
+.hui-message--success{
+  @include message-type(#333333,#EEF2FC);
+  .iconfont{
+    color:green
+  }
+}
+
+.hui-message--warning{
+  @include message-type(#e6a23c,#faecd8);
+}
+
+.hui-message--error{
+  @include message-type(#D93026,#FCEBEA);
+}

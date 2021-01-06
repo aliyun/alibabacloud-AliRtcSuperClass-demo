@@ -1,0 +1,36 @@
+
+@charset "UTF-8";
+@import "./base.scss";
+
+.hui-name-input{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: h(10) 0;
+  position: relative;
+  .hui-name-input-label{
+    position: absolute;
+    display: inline-block;
+    top:h(-10);
+    font-size: 12px;
+    color: #888888;
+  }
+  input {
+    position: relative;
+    border-bottom: h(1) solid #979797;
+    color: #181818;
+    height: 32px;
+    line-height: 32px;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: h(16);
+  }
+}

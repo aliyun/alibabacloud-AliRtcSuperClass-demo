@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "./base.scss";
+
+.hui-message-box{
+  position: fixed;
+  z-index: 100;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  width: h(360);
+  padding-bottom: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  // box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  overflow: hidden;
+  backface-visibility: hidden;
+  padding: h(17) w(21);
+  .hui-message-box__close{
+    height: h(48);
+    line-height: h(48);
+    font-size: h(30);
+    color: #888888;
+    text-align: right;
+    cursor: pointer;
+    user-select: none;
+  }
+  .hui-message-box__header{
+    .hui-message-box__title{
+      font-size:h(18);
+      color: #111111;
+    }
+  }
+  .hui-message-box__content{
+    margin-top: h(15);
+    line-height: 1.2;
+    font-size:h(14);
+      color: #888;
+  }
+  .hui-message-box__btns{
+    margin-top: h(38);
+    text-align: right;
+  }
+}

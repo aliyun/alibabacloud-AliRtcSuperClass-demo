@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This is the line -->
+    <!-- left 和right是左右边距 -->
+    <item
+        android:left="@dimen/alivc_superclass_width_selector_1"
+        android:right="@dimen/alivc_superclass_width_selector_1">
+        <shape>
+            <solid android:color="@color/alivc_superclass_color_text_black" />
+        </shape>
+    </item>
+    <!--bottom是横线高度 -->
+    <item android:bottom="@dimen/alivc_superclass_width_selector_1">
+        <shape>
+            <solid android:color="@color/color_error_tips_red" />
+        </shape>
+    </item>
+
+</layer-list>

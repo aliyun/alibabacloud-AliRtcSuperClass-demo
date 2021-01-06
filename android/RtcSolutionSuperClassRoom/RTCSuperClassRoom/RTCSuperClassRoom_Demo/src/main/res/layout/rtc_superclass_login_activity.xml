@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/alivc_superclass_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_superclass_color_text_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/alivc_superclass_iv_back"
+        android:layout_marginLeft="@dimen/alivc_superclass_padding_20"
+        android:layout_marginTop="@dimen/alivc_superclass_margin_36"
+        android:src="@drawable/back"
+        android:layout_width="@dimen/alivc_superclass_height_titlebar_24"
+        android:layout_height="@dimen/alivc_superclass_height_titlebar_24"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:id="@+id/alirtc_audioliveroom_iv_logo_bg"
+        android:background="@drawable/alivc_superclass_bg_logo_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/alivc_superclass_rl_login_layout_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alivc_superclass_tv_title"
+            android:layout_marginTop="@dimen/alivc_superclass_padding_20"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alivc_superclass_string_title_rtc"
+            android:textColor="@color/alivc_superclass_color_text_gray"
+            android:textSize="@dimen/alivc_superclass_size_text_24"
+            />
+
+        <TextView
+            android:id="@+id/alivc_superclass_tv_second_title"
+            android:layout_below="@id/alivc_superclass_tv_title"
+            android:layout_marginTop="@dimen/alivc_superclass_margin_6"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alivc_superclass_string_second_title_rtc"
+            android:textColor="@color/alivc_superclass_color_text_gray"
+            android:textSize="@dimen/alivc_superclass_size_text_10"
+            />
+
+
+
+        <EditText
+            android:id="@+id/alivc_superclass_edittext_channelid"
+            android:layout_width="@dimen/alivc_superclass_width_et_305"
+            android:layout_height="@dimen/alivc_superclass_width_selector_40"
+            android:layout_below="@id/alivc_superclass_tv_title"
+            android:layout_marginTop="75dp"
+            android:background="@null"
+            android:hint="@string/alivc_superclass_string_name_hint"
+            android:textColorHint="@color/alivc_superclass_color_text_gray"
+            android:maxLines="1"
+            android:textColor="@color/alivc_superclass_color_text_gray"
+            android:textSize="@dimen/alivc_superclass_size_text_16" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_padding_1"
+            android:layout_below="@id/alivc_superclass_edittext_channelid"
+            android:layout_marginTop="10dp"
+            android:background="@color/alivc_superclass_color_text_gray"
+            android:layout_alignLeft="@id/alivc_superclass_edittext_channelid"
+            android:layout_alignRight="@id/alivc_superclass_edittext_channelid"
+            >
+        </View>
+
+
+
+
+        <EditText
+            android:id="@+id/alivc_superclass_edittext_classcode"
+            android:layout_width="@dimen/alivc_superclass_width_et_305"
+            android:layout_height="@dimen/alivc_superclass_width_selector_40"
+            android:layout_below="@id/alivc_superclass_edittext_channelid"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:hint="@string/alivc_superclass_string_class_code_hint"
+            android:textColorHint="@color/alivc_superclass_color_text_gray"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textColor="@color/alivc_superclass_color_text_gray"
+            android:textSize="@dimen/alivc_superclass_size_text_16" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_padding_1"
+            android:layout_below="@id/alivc_superclass_edittext_classcode"
+            android:layout_marginTop="10dp"
+            android:background="@color/alivc_superclass_color_text_gray"
+            android:layout_alignLeft="@id/alivc_superclass_edittext_classcode"
+            android:layout_alignRight="@id/alivc_superclass_edittext_channelid"
+            >
+        </View>
+
+
+
+
+        <TextView
+            android:id="@+id/alivc_superclass_edittext_group"
+            android:layout_width="@dimen/alivc_superclass_width_et_305"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/alivc_superclass_width_selector_40"
+            android:layout_below="@id/alivc_superclass_edittext_classcode"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:hint="@string/alivc_superclass_string_group_hint"
+            android:textColorHint="@color/alivc_superclass_color_text_gray"
+            android:maxLines="1"
+            android:textColor="@color/alivc_superclass_color_text_gray"
+            android:textSize="@dimen/alivc_superclass_size_text_16" />
+
+        <ImageView
+            android:layout_width="@dimen/alivc_common_size_icon_20"
+            android:layout_height="@dimen/alivc_common_size_icon_20"
+            android:src="@drawable/alivc_superclass_byn_right_icon3x"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/alivc_superclass_edittext_classcode"
+            android:layout_alignRight="@+id/alivc_superclass_edittext_classcode"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_padding_1"
+            android:layout_below="@id/alivc_superclass_edittext_group"
+            android:background="@color/alivc_superclass_color_text_gray"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/alivc_superclass_edittext_group"
+            android:layout_alignRight="@id/alivc_superclass_edittext_channelid"
+            >
+        </View>
+
+        <TextView
+            android:id="@+id/alivc_superclass_tv_enter_class"
+            android:gravity="center"
+            android:enabled="true"
+            android:textColor="@color/alivc_superclass_color_text_white"
+            android:layout_marginTop="@dimen/alivc_superclass_margin_75"
+            android:background="@drawable/alivc_superclass_btn_bg_selector"
+            android:layout_centerHorizontal="true"
+            android:text="@string/alivc_superclass_string_enter_classroom"
+            android:textSize="@dimen/alivc_superclass_size_text_18"
+            android:layout_below="@id/alivc_superclass_edittext_group"
+            android:layout_width="306dp"
+            android:layout_height="@dimen/alivc_superclass_height_tv_48"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

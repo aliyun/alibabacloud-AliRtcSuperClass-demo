@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rtc_background" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rtc_network_error_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_height_group_36"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/alivc_common_margin_20"
+            android:text="@string/alivc_rtc_net_work_error_tips1"
+            android:textColor="@color/alivc_common_white"
+            android:textSize="@dimen/alivc_common_font_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_height_group_20"
+            android:gravity="center"
+            android:text="@string/alivc_rtc_net_work_error_tips2"
+            android:textColor="@color/alivc_common_white"
+            android:textSize="@dimen/alivc_common_font_14" />
+
+        <TextView
+            android:id="@+id/tv_retry"
+            android:layout_width="@dimen/alivc_common_width_group_150"
+            android:layout_height="@dimen/alivc_common_height_group_50"
+            android:layout_marginTop="30dp"
+            android:background="@color/alivc_rtc_color_btn_enable_blue"
+            android:gravity="center"
+            android:text="@string/alivc_rtc_net_work_error_button"
+            android:textColor="@color/alivc_common_white" />
+    </LinearLayout>
+
+
+</FrameLayout>
